@@ -2,359 +2,869 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
 
-  <title>Hello - Nicolò Tombini</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <!--
+    - #MAIN
+  -->
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Who I am</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>My Works</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+  <main>
 
-  </header><!-- End Header -->
+    <!--
+      - #SIDEBAR
+    -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Nicolò Tombini</h1>
-      <p>I'm <span class="typed" data-typed-items="Software Engineer @ Neuraloo Inc."></span></p>
-      <div class="social-links">
-        <a target="_blank" href="https://www.instagram.com/nicolotombini/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/nicol%C3%B2-tombini-124b52235/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a target="_blank" href="https://github.com/tombinic" class="github"><i class="bx bxl-github"></i></a>
-      </div>
-    </div>
-  </section><!-- End Hero -->
+    <aside class="sidebar" data-sidebar>
 
-  <main id="main">
+      <div class="sidebar-info">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+        <figure class="avatar-box">
+          <img src="./assets/images/myavatar.jpeg" style="border-radius: 30px;" alt="Nicolò Tombini" width="80">
+        </figure>
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Hello, my name is Tombini Nicolò I'm graduated in Computer, Electronic and Telecommunications Engineering at the University of Parma.</p>
-          <p>I'm starting also to attend my master's degree in Computer Science and Engineering at PoliMi.</p>
+        <div class="info-content">
+          <h1 class="name" title="Nicolò Tombini">Nicolò Tombini</h1>
+
+          <p class="title">SW & MLOps Engineer</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/hero-bg.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Software Engineer</h3>
-            <p class="fst-italic">
-              Below there are some information about me
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>26 July 2000</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>tombinic.github.io</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Parma/Milan, Italy</span></li>
-                </ul>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">nicolo.tombini@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2000-07-26">July 26, 2000</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Milan, Italy</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/nicolò-tombini-124b52235/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/tombinic" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello everyone!
+
+            Graduated at "Politecnico di Milano" in Computer Science and Engineering (AI specialization), I am a pragmatic, determined and creative guy with a special passion in Machine Learning, Deep Learning and Software Engineering. 
+            I enjoy collaborating with others to find solutions to complex problems and I am always looking for new challenges and opportunities to learn and grow.
+          </p>
+
+          <p>
+            Currently working as SW & MLOps Engineer @ Generali Italia.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/gear-icon.png
+                " alt="design icon" width="40">
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>nicolo.tombini@gmail.com</span></li>
-                </ul>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">MLOps</h4>
+
+                <p class="service-item-text">
+                  I manage the operational side of ML models, automating pipelines and ensuring smooth deployment.
+                </p>
               </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/laptop-icon.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Engineering</h4>
+
+                <p class="service-item-text">
+                  I build scalable software solutions with a strong focus on architecture and code quality.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/ai-icon.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Artificial Intelligence</h4>
+
+                <p class="service-item-text">
+                  I work with advanced AI techniques to develop intelligent systems and smart applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Personal projects</h4>
+
+                <p class="service-item-text">
+                  I dedicate time to personal projects to explore new technologies and strengthen my skills (GenAI).
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+      
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
           </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
+          <ol class="timeline-list">
 
-        <div class="section-title">
-          <h2>Who I am?</h2>
-        </div>
+            <li class="timeline-item">
 
-        <div class="row">
-          <div class="col-lg-6">
+              <h4 class="h4 timeline-item-title">Politecnico di Milano</h4>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Diploma at technical institute, Computer Science</h4>
-              <h5>2014-2019</h5>
-              <h6>98/100</h6>
-              <p><em>ITIS "Leonardo da Vinci", Parma, Italy</em></p>
+              <span>Sep 2022 — Apr 2025</span>
+
+              <p class="timeline-text">
+                Master's degree in Computer Science and Engineering (AI specialization)<br>
+                Grade: 108 / 110
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Università degli Studi di Parma</h4>
+
+              <span>Sep 2019 — Oct 2022</span>
+
+              <p class="timeline-text">
+                Bachelor's degree, Computer, Electronic and Telecommunications Engineering<br>
+                Grade: 110 cum laude / 110
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ITIS Leonardo Da Vinci</h4>
+
+              <span>Sep 2014 — Jun 2019</span>
+
+              <p class="timeline-text">
+                Technical institute diploma, Computer Science<br>
+                Grade: 98 / 100
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
-            <div class="resume-item">
-              <h4>Bachelor's degree in Computer, Electronic and Telecommunications Engineering</h4>
-              <h5>2019 - 2022</h5>
-              <h6>110 cum laude/110</h6>
-              <p><em>Università degli Studi di Parma, Parma, Italy</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Master's degree in Computer Science and Engineering</h4>
-              <h5>2022 - ?</h5>
-              <h6>?/110</h6>
-              <p><em>Politecnico di Milano, Milan, Italy</em></p>
-            </div>
+
+            <h3 class="h3">Experience</h3>
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Java Software Developer @ Blue Eye Solutions</h4>
-              <h5>2017 - 2017</h5>
-              <p><em>Basilicanova, Parma, Italy </em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Student Teacher @ ProntoPro</h4>
-              <h5>2018 - 09/2023</h5>
-              <p><em>Parma/Milan, Italy </em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Software Engineer @ Neuraloo Inc.</h4>
-              <h5>2022 - 06/2024</h5>
-              <p><em>Florida, United States </em></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Resume Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
+          <ol class="timeline-list">
 
-        <div class="section-title">
-          <h2>My Works</h2>
-        </div>
+            <li class="timeline-item">
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-AI">AI / Machine Learning</li>
-              <li data-filter=".filter-WEB">Web</li>
-              <li data-filter=".filter-GAMES">Games</li>
-              <li data-filter=".filter-ANALYSIS">Analysis</li>
+              <h4 class="h4 timeline-item-title">SW & MLOps Engineer</h4>
+
+              <span>Apr 2025 — now</span>
+
+              <p class="timeline-text">
+                Software Engineer & MLOps @ Generali Italia, Milan, Italy
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Engineer</h4>
+
+              <span>Oct 2022 — Jun 2024</span>
+
+              <p class="timeline-text">
+                Worked on graph visualization about stocks with Rust and Javascript
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Student Teacher</h4>
+
+              <span>Aug 2018 — Sep 2023</span>
+
+              <p class="timeline-text">
+                Offered pc repair services, creation of showcase/portfolio websites and private lessons of Computer Science
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer, Autonomous</h4>
+
+              <span>Oct 2018 — Jun 2019</span>
+
+              <p class="timeline-text">
+                Project developed for the state exam of the last year of school in collaboration with Raytec Vision S.P.A.: developed a C# software that, through a webcam, was able to recognize the state of a LED board.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer Intern</h4>
+
+              <span>Jun 2018 — Jul 2018</span>
+
+              <p class="timeline-text">
+                Development of videogame in Go and development of a webapp in HTML, JavaScript and CSS for an internship @ Università degli Studi di Parma   
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer Intern</h4>
+
+              <span>Jun 2017 — Aug 2017</span>
+
+              <p class="timeline-text">
+                Development of a desktop application in Java that uses SMTP servers to send mails for an internship @ Blue Eye Solutions              
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      
+
+      </article>
+
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Scientific</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Games</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Scientific</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Games</button>
+              </li>
+
             </ul>
-          </div>
-        </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-AI">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/mldiabetes-bkg.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Machine Learning with Diabetes</h4>
-                <p>Machine Learning</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/tombinic/MLDiabetes" target="_blank"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-AI filter-WEB">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/ianswers-bkg.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IAnswers</h4>
-                <p>Web / Machine Learning</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/tombinic/IAnswers" target="_blank"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ul class="project-list">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-WEB">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/dnsolver-bkg.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>DNSolver</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/tombinic/DNSolver" target="_blank"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/tombinic/eMall">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-GAMES">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/hitori.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Hitori</h4>
-                <p>Game</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/tombinic/Hitori" target="_blank"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-GAMES">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/moonpatrol.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>MoonPatrol</h4>
-                <p>Game</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/tombinic/MoonPatrol" target="_blank"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                  <img src="./assets/images/emall.png" alt="eMall" loading="lazy">
+                </figure>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-WEB">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/emall.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>eMall</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/tombinic/eMall" target="_blank"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                <h3 class="project-title">eMall</h3>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-ANALYSIS">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/darkweb.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>DarkWeb</h4>
-                <p>Analysis</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/tombinic/DarkWeb" target="_blank"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                <p class="project-category">Application</p>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-AI">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/squad.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>SQuAD2.0</h4>
-                <p>NLP</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/tombinic/SQuAD2.0" target="_blank"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+              </a>
+            </li>
 
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
+            <li class="project-item  active" data-filter-item data-category="scientific">
+              <a href="https://github.com/tombinic/DarkWeb">
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
+                  <img src="./assets/images/darkweb.png" alt="darkweb" loading="lazy">
+                </figure>
 
-        <div class="row mt-1">
+                <h3 class="project-title">Darkweb network analysis</h3>
 
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Politecnico di Milano, Milan, Italy</p>
-              </div>
+                <p class="project-category">Scientific</p>
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>nicolo.tombini@gmail.com</p>
-              </div>
-            </div>
-          </div>
+              </a>
+            </li>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.5880699454633!2d9.22277152841254!3d45.478101373703396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6f67dd11753%3A0x8e30fae1774a3377!2sPolitecnico%20di%20Milano!5e0!3m2!1sit!2sit!4v1660400330284!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+            <li class="project-item  active" data-filter-item data-category="scientific">
+              <a href="https://github.com/tombinic/MLDiabetes">
 
-      </div>
-    </section><!-- End Contact Section -->
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-  </main><!-- End #main -->
+                  <img src="./assets/images/diabetes.png" alt="diabetes" loading="lazy">
+                </figure>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Nicolò Tombini</h3>
-      <p>L'ossessione batte il talento, sempre</p>
-      <div class="social-links">
-        <a target="_blank" href="https://www.instagram.com/nicolotombini/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/nicol%C3%B2-tombini-124b52235/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a target="_blank" href="https://github.com/tombinic" class="github"><i class="bx bxl-github"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+                <h3 class="project-title">Diabetes diagnosis prediction</h3>
+
+                <p class="project-category">Scientific</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/tombinic/DNSolver">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/dnsolver.png" alt="dnsolver" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DNSolver</h3>
+
+                <p class="project-category">Web Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/tombinic/IAnswers">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ianswers.png" alt="ianswers" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">IAnswers</h3>
+
+                <p class="project-category">Web Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://github.com/tombinic/hitori">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/hitori.png" alt="hitori" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Hitori</h3>
+
+                <p class="project-category">Game</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://github.com/tombinic/MoonPatrol">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/moonpatrol.png" alt="hitori" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Moon Patrol</h3>
+
+                <p class="project-category">Game</p>
+
+              </a>
+            </li>
+			
+			<li class="project-item  active" data-filter-item data-category="scientific">
+              <a href="https://github.com/tombinic/SQuAD2.0">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/squad.png" alt="squad" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SQuAD2.0</h3>
+
+                <p class="project-category">Scientific</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="scientific">
+              <a href="https://github.com/tombinic/PPGAnalysis">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ppgs.ppm" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PPG Signals analysis for Cardiac Abnormality Detection</h3>
+
+                <p class="project-category">Scientific</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="scientific">
+              <a href="https://github.com/andberto/LeafClassification/tree/main">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/leafs.webp" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Leaf classification</h3>
+
+                <p class="project-category">Scientific</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="scientific">
+              <a href="https://github.com/tombinic/3DRoadReconstruction">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/iacv.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Road point cloud estimation from static monocular view</h3>
+
+                <p class="project-category">Scientific</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="scientific">
+              <a href="https://github.com/tombinic/Neo4J-ES-Visualizer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/visualizer.png" alt="visualizer" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Neo4J-ES-Visualizer</h3>
+
+                <p class="project-category">Scientific</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="scientific">
+              <a href="https://github.com/tombinic/Geometric-Computer-Vision">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/gcv.png" alt="gcv" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Geometric Computer Vision</h3>
+
+                <p class="project-category">Scientific</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="scientific">
+              <a href="https://github.com/tombinic/Online-Learning-Campaign">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/olc.png" alt="olc" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Online Learning Campaign</h3>
+
+                <p class="project-category">Scientific</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="scientific">
+              <a href="https://github.com/tombinic/Time-Series-Forecasting">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tsf.png" alt="tsf" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Time Series Forecasting</h3>
+
+                <p class="project-category">Scientific</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+   
     </div>
-  </footer><!-- End Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </main>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
